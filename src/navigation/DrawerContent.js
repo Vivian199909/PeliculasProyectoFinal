@@ -21,17 +21,20 @@
         <Drawer.Section>
             <Drawer.Item
             label="Inicio"
-            icon="star"
+            icon="home"
             active={active === 'home'}
             onPress={() => onChangeScreen('home')}
             />
             <Drawer.Item
             label="Peliculas Populares"
+            icon="movie"
             active={active === 'popular'}
             onPress={() => onChangeScreen('popular')}
             />
+            
             <Drawer.Item
-            label="Nuevas Peliculas"
+            label="Peliculas Mas Valoradas"
+            icon="youtube" 
             active={active === 'news'}
             onPress={() => onChangeScreen('news')}
             />

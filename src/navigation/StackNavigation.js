@@ -6,7 +6,7 @@ import Movie from '../screens/Movie';
 import News from '../screens/News';
 import Popular from '../screens/Popular';
 import Search from '../screens/Search';
-import Menu from '../screens/Menu';
+
 //import Navigation from './Navigation';
 const Stack = createStackNavigator();
 
@@ -66,21 +66,12 @@ export default function StackNavigation(props) {
           headerRight: () => buttonRight(),
         }}
       />
-      <Stack.Screen
-        name="MenuAlt"
-        component={Menu}
-        options={{
-          title: '',
-          headerTransparent:true,
-          headerLeft: () => buttonLeft(),
-          headerRight: () => buttonRight(),
-        }}
-      />
+      
       <Stack.Screen
         name="news"
         component={News}
         options={{
-          title: 'News',
+          title: 'Las mas Valoradas',
           headerLeft: () => buttonLeft(),
           headerRight: () => buttonRight(),
         }}
